@@ -5,6 +5,7 @@
     
     <!-- Move -->
     <scale
+
             android:duration="4000"
         android:fromXScale="1"
         android:fromYScale="1"

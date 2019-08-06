@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Dear</string>
+    <string name="click">Нажмите на оленя, чтобы получить ответ на свой вопрос</string>
 </resources>
