@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
             override fun onAnimationEnd(p0: Animation?) {
                if (p0 == animationTitleScale) {
-                   
+
                }
             }
 
