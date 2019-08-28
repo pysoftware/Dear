@@ -2,11 +2,16 @@ package com.example.dear
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View.GONE
-import android.view.View.VISIBLE
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import kotlinx.android.synthetic.main.activity_main.*
+import android.R.attr.start
+import android.animation.ArgbEvaluator
+import android.animation.ValueAnimator
+import android.animation.ObjectAnimator
+import android.graphics.Color
+import android.view.View.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,24 +24,8 @@ class MainActivity : AppCompatActivity() {
         val animationOlen = AnimationUtils.loadAnimation(this, R.anim.olen)
         val animationDialog = AnimationUtils.loadAnimation(this, R.anim.dialog)
         val animationTitle = AnimationUtils.loadAnimation(this, R.anim.drop_title)
-        val animationTitleScale = AnimationUtils.loadAnimation(this, R.anim.title_scale)
-        animationTitleScale.setAnimationListener(object : Animation.AnimationListener {
-            override fun onAnimationRepeat(p0: Animation?) {
+//        val animationTitleScale = AnimationUtils.loadAnimation(this, R.anim.title_scale)
 
-            }
-
-            override fun onAnimationEnd(p0: Animation?) {
-               if (p0 == animationTitleScale) {
-
-               }
-            }
-
-            override fun onAnimationStart(p0: Animation?) {
-
-            }
-
-        })
-        tv_title.startAnimation(animationTitleScale)
 
         olenn.setOnClickListener {
             if(checkTitle) {

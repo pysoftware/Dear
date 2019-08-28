@@ -15,7 +15,7 @@
   <translate
           android:fromXDelta="0%" android:toXDelta="0%"
              android:fromYDelta="0%" android:toYDelta="500%"
-             android:duration="350"/>
+             android:duration="450"/>
 
   <rotate
           android:duration="250"
