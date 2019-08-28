@@ -23,7 +23,7 @@
 
     <ImageView
             android:contentDescription="@string/dear_answer"
-            android:visibility="visible"
+            android:visibility="invisible"
             android:scaleType="centerInside"
             android:id="@+id/dialog"
             android:src="@drawable/p"
