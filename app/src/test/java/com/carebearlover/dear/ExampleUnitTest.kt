@@ -1,4 +1,4 @@
-package com.example.dear
+package com.carebearlover.dear
 
 import org.junit.Test
 

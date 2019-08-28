@@ -1,16 +1,12 @@
-package com.example.dear
+package com.carebearlover.deer
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import kotlinx.android.synthetic.main.activity_main.*
-import android.R.attr.start
-import android.animation.ArgbEvaluator
-import android.animation.ValueAnimator
-import android.animation.ObjectAnimator
-import android.graphics.Color
 import android.view.View.*
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 
 
 class MainActivity : AppCompatActivity() {
@@ -21,11 +17,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        MobileAds.initialize(this)
+        val adRequest = AdRequest.Builder().build()
+        adView.loadAd(adRequest)
+
         val animationOlen = AnimationUtils.loadAnimation(this, R.anim.olen)
         val animationDialog = AnimationUtils.loadAnimation(this, R.anim.dialog)
         val animationTitle = AnimationUtils.loadAnimation(this, R.anim.drop_title)
 //        val animationTitleScale = AnimationUtils.loadAnimation(this, R.anim.title_scale)
-
 
         olenn.setOnClickListener {
             if(checkTitle) {

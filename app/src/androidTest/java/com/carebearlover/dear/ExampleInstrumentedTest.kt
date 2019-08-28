@@ -1,4 +1,4 @@
-package com.example.dear
+package com.carebearlover.dear
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4
