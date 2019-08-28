@@ -29,6 +29,8 @@
             android:src="@drawable/p"
             android:layout_width="225dp"
             android:layout_height="45dp"
+            android:scaleX="0.95"
+            android:scaleY="0.95"
             app:layout_constraintStart_toStartOf="@+id/olenn"
             app:layout_constraintEnd_toEndOf="@+id/olenn"
             app:layout_constraintTop_toTopOf="@+id/olenn"
